@@ -1,0 +1,117 @@
+:root{
+  --mainColor:var(aquamarine);
+  --hoverColer: var(#0d6efd);
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* start navbar */
+.navbar{
+  background-color: transparent;
+
+}
+.navbar .navbar-toggler{
+  margin-top: 5px;
+  box-shadow: none;
+
+}
+.navbar .navbar-toggler i{
+  font-size: 35px;
+  color: aliceblue;
+}
+
+.navbar-nav{
+  margin-top: 30px;
+}
+.navbar-brand{
+  margin-top: 36px;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-weight:800;
+  color: aquamarine;
+}
+
+.navbar-nav li{
+  padding-left: 20px;
+}
+.navbar-nav li a{
+  color:aquamarine;
+  font-size: 17px;
+  font-family: 'Oleo Script Swash Caps', cursive;
+transition: all 2s;
+
+}
+.navbar-nav li a:hover{
+color: #0d6efd;
+}
+/* end navbar */
+/* start home Content */
+.home{
+  background-image: url(../image/bg.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.homeLayer{
+
+  background-color: rgba(0, 0, 1, 0.6);
+ 
+
+}
+.homeContet{
+  padding: 50px;
+  position: relative;
+}
+.homeContet .item{
+  width: 100%;
+  height: 100%;
+}
+.homeContet .item{
+  width: 100%;
+  height: 100%;
+}
+.lightBox{
+  position:absolute;
+  top: 0;
+bottom:0 ;
+  left: 0;
+  right: 0;
+ background-color: rgba(0, 0, 0, 0.5); ;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ display: none;
+}
+.lightBoxItems{
+  width: 300px;
+  height: 300px;
+  background-position:center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* end home Content */
+/* start products-income */
+.products-income {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width:768px){
+  .products-income{
+      width: 100%;
+  }
+}
+.products.search{
+width: 75%;
+}
+.products.search input{
+  width:50px;
+  margin:auto;
+}
+.products-income #btnUdate{
+  display: none;
+}

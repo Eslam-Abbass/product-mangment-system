@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;700&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="home">
+      <div class="homeLayer">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="#">Shop Sale</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <!-- <span class="navbar-toggler-icon"></span> -->
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#products-income">Product income</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#products">products</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+         
+        </nav>
+        
+        <div class="homeContet p-5">
+          <div class="head m-4">
+            <h1 class="text-center text-success">welcom to my website</h1>
+          </div>
+          <div class="container">
+            <div class="row gy-3">
+              
+              <div class="col-xl-4 col-sm-12">
+                <div class="item">
+                  <img src="image/image2.jfif"class="w-100 h-100 " alt="">
+                </div>
+              </div>
+              <div class="col-xl-4 col-sm-12">
+                <div class="item">
+                  <img src="image/image1.jpg"class="w-100  h-100" alt="">
+                </div>
+              </div>
+              <div class="col-xl-4 col-sm-12">
+                <div class="item">
+                  <img src="image/download.jfif"class="w-100 h-100" alt="">
+                </div>
+              </div>
+        
+            
+           
+              <div class="col-xl-4 col-sm-12">
+                <div class="item">
+                  <img src="image/images.jfif"class="w-100 h-100" alt="">
+                </div>
+              </div>
+              <div class="col-xl-4 col-sm-12">
+                <div class="item">
+                  <img src="image/bg2.jfif"class="w-100 h-100" alt="">
+                </div>
+              </div>
+              <div class="col-xl-4 col-sm-12">
+                <div class="item">
+                  <img src="image/images.jfif" class="w-100 h-100"alt="">
+                </div>
+              </div>
+    
+            </div>
+          </div>
+      <div class="lightBox">
+    <div class="lightBoxItems position-relative d-flex align-items-center justify-content-between p-3">
+        <i class="fa-solid fa-arrow-left-long text-white"></i>
+        <i class="fa-solid fa-xmark position-absolute top-0 end-0 m-3 text-white"></i>
+        <i class="fa-solid fa-arrow-right-long text-white" ></i>
+    </div>
+      </div>
+        </div>
+      </div>
+    
+    </div>
+
+   <div class="container mt-3" id="products">
+  <div class="products">
+  <div class="vegetables">
+    <div class="row ">
+      
+      <div class="search">
+        <h1 class="text-center p-2">Managment System</h1>
+        <div class="col-xl-12 col-sm-12">
+        <input type="text" class="form-control w-50 mx-auto my-3"id='inputSearch' oninput="search(this.value)" placeholder="search" >
+      </div>
+      
+<table class="table">
+  <thead>
+    <th>Index</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Category</th>
+    <th>Discreption</th>
+    <th>Update</th>
+    <th>Delete</th>
+  </thead>
+  <tbody id="data-product">
+  </tbody>
+</table>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="container-fluid" id="products-income">
+  <div class="products-income  mx-auto">
+    <div class="row">
+      <div class="col-xl-12">
+      <div class="prouduct mt-3">
+        <label class="py-2" for="productName">product Name :</label>
+        <input class="form-control p-1 "oninput="validationName()" type="text" id="productName">
+
+        <label class="py-2" for="productPrice">product Price :</label>
+        <input class="form-control " type="number" id="productPrice">
+
+        <label class="py-2" for="productCatogery">product Catogery :</label>
+        <input class="form-control" type="text" id="productCatogery">
+  
+        <label class="py-3" for="productDiscreption">product Discreption:</label>
+        <textarea class="form-control " type="text" id="productDiscreption"></textarea>
+        <button  class="btn btn-outline-info  ms-2 my-4" id="btnAdd" onclick='AddProduct()' >Add product</button>
+        <button  class="btn btn-outline-warning  ms-2 my-4 "id="btnUdate" onclick="Update()" >Update</button>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
